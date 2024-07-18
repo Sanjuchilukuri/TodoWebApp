@@ -1,0 +1,14 @@
+<div class="add-task-wrapper row z-2 vw-100 vh-100 position-fixed top-0 m-0 bg-blur d-flex justify-content-center align-items-center" *ngIf="openModel()">
+    <form class="add-task-container shadow rounded-3 p-4 col-lg-5 bg-white col-md-7 col-8" [formGroup]="newTaskForm" (submit)="addTask()">
+        <label for="title"></label>
+        <input class="border-0 outline-0 fw-400 w-100 p-2 shadow-sm rounded-2 mt-2" type="text" placeholder="Add title" id="title" formControlName="title" maxlength="10">
+        <span class="error text-danger" *ngIf="newTaskForm.get('title')?.invalid && newTaskForm.get('title')?.touched">*Title is Required</span>
+        <label for="description"></label>
+        <textarea class="border-0 outline-0 fw-400 w-100 p-2 shadow-sm rounded-2 mt-2" name="description" id="description" cols="30" rows="7" placeholder="Add description" formControlName="description" maxlength="100"></textarea>
+        <span class="error text-danger" *ngIf="newTaskForm.get('description')?.invalid && newTaskForm.get('description')?.touched">*Description is Required</span>
+        <div class="btns d-flex justify-content-end gap-3 mt-3">
+            <button class="rounded-3 py-2 px-3 text-black cursor-pointer " type="button" (click)="cancel()">Cancel</button>
+            <button class="rounded-3 py-2 px-3 text-black cursor-pointer bg-primary border-0" type="submit">{{taskToUpdate == 0 ? 'Save' : 'Update'}}</button>
+        </div>
+    </form>
+</div> 

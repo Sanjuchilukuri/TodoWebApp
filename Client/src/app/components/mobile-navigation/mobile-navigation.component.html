@@ -1,0 +1,8 @@
+<div class="mobile-navigation z-2 d-block bg-primary rounded-2 text-black fw-400 py-2 px-3 mx-lg-3 mx-0 me-2 mt-0 mb-3 d-lg-none position-sticky" (click)="toogleOptions()" tabindex="0">
+  {{ selectedItem }}
+  <div class="options-wrapper position-absolute top-100 start-0 bg-white rounded-bottom z-2 ps-3 d-none w-100" #options>
+    <div class="text-black fw-400 my-2 mx-0" *ngIf="selectedItem !== 'Dashboard'" id="Dashboard" tabindex="0" (click)="selectItem($event)">Dashboard</div>
+    <div class="text-black fw-400 my-2 mx-0" *ngIf="selectedItem !== 'Active'" tabindex="0" id="Active" (click)="selectItem($event)">Active</div>
+    <div class="text-black fw-400 my-2 mx-0" *ngIf="selectedItem !== 'Completed'" tabindex="0" id="Completed" (click)="selectItem($event)">Completed</div>
+  </div>
+</div>

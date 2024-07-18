@@ -1,0 +1,34 @@
+.add-task-wrapper {
+  .add-task-container {
+    input,
+    textarea {
+      &::placeholder {
+        color: var(--text-grey);
+      }
+    }
+    input{
+      font-size: 1rem;
+    }
+    textarea {
+      resize: none;
+      max-height: 150px;
+    }
+    .error{
+      font-size: .7rem;
+    }
+  }
+  .btns {
+    button {
+      border: 2px solid var(--primary-color);
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .add-task-container {
+    min-width: 300px;
+    textarea{
+      height: 100px;
+    }
+  }
+}

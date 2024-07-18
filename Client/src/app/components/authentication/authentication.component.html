@@ -1,0 +1,35 @@
+<div class="container-fluid row d-flex justify-content-center align-items-center vh-100 position-relative m-0 p-0">
+  <div class="content-container col-5 py-4 px-sm-4 px-2 col-xl-4 col-lg-5 col-md-6 col-sm-8 col-10 shadow d-flex flex-column  z-1 rounded-4" [class]=" action == authActions.Register ? ' bg-primary ' : ' bg-white'">
+    <div class="title w-100 text-center">
+      <h1 class="fw-700" [class]="action == authActions.Register?'text-white':' text-secondary'">To-Do App</h1>
+      <p class="fw-400" [class]="action == authActions.Register?' text-white':'text-black'">Start organizing your life day by day</p>
+    </div>
+    <form class=" w-100 d-flex flex-column gap-2 gap-sm-3"  [formGroup]="registerForm" (submit)="action == authActions.Register ? register() : login()">
+      <div class="input-wrapper d-flex flex-column gap-2 gap-sm-3">
+        <label for="username"></label>
+        <input class=" p-2 rounded-3 border-0 outline-0 shadow-sm" type="text" name="username" id="username" autocomplete="username" [placeholder]="action == authActions.Register ? 'userName' : 'Enter your username'" formControlName="userName"/>
+        <span class="error text-danger " *ngIf="registerForm.get('userName')?.invalid && registerForm.get('userName')?.touched">*UserName is required</span>
+        <label for="password"></label>
+        <div class="password-input-wrapper position-relative">
+          <input class="p-2 rounded-3 border-0 outline-0 shadow-sm w-100" type="password" name="password" id="password" #password [placeholder]="action == authActions.Register? 'password' : 'Enter your password'" formControlName="password"/>
+          <img class="position-absolute" [src]="action == authActions.Login ? './assets/password-toogle-icon-login.svg':'./assets/password-toogle-icon-register.svg'" (click)="showPassword()"/>
+        </div>
+        <span class="error text-danger " *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched">*password is required</span>
+      </div>
+      <div class="btn-wrapper d-flex flex-column align-items-center justify-content-center gap-2 ">
+        <button class="px-4 py-2 rounded-3 border-0 outline-0 fw-400 cursor-pointer " [class]="action == authActions.Register?' text-white bg-secondary':' text-black bg-primary'" type="submit">
+          {{ action == authActions.Register ? "Sign Up" : "Sign In" }}
+        </button>
+        <p class="text-center fw-400 " [class]="action == authActions.Register?' text-white':' text-black'">
+          {{
+            action == authActions.Register
+              ? "Already have an account? Sign in"
+              : "Don't have an account? Create "
+          }}
+          <span [class]="action == authActions.Register? 'text-secondary ':'text-primary '" (click)="action == authActions.Register ?  loginPage() : registerPage() ">{{ action == authActions.Register ? "here" : "here" }}</span
+          >.
+        </p>
+      </div>
+    </form>
+  </div>
+</div>

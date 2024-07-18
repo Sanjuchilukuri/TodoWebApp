@@ -1,0 +1,16 @@
+<aside class="bg-white position-sticky d-none d-lg-block" >
+  <div class="sidebar-wrapper d-flex flex-column gap-5 align-items-center mt-2">
+    <div class="logo">
+      <h1 class="text-secondary fw-700">To-Do App</h1>
+    </div>
+    <div class="add-task-btn d-flex justify-content-between align-items-center rounded-3 p-3 shadow" (click)="showAddTaskModel()">
+      <p class="m-0 fw-400 text-black">Add Task</p>
+      <img src="./assets/add-task-btn.png" alt="add-task-btn" />
+    </div>
+    <ul class="p-0 w-100 ">
+      <li class="fw-400 text-black text-center p-2 mt-3" routerLink="/dashboard" routerLinkActive="active">Dashboard</li>
+      <li class="fw-400 text-black text-center p-2 mt-3" routerLink="/active" routerLinkActive="active">Active</li>
+      <li class="fw-400 text-black text-center p-2 mt-3" routerLink="/completed" routerLinkActive="active">Completed</li>
+    </ul>
+  </div>
+</aside>

@@ -1,0 +1,7 @@
+<div class="px-3 py-md-3 d-flex flex-md-column align-items-center rounded-md-3 rounded-4 gap-2 stats-container justify-content-center flex-row" [class]="componentAction['Active'] == tasksStatus ?'bg-primary' : 'bg-secondary'">
+  <img  [src]="componentAction['Active'] == tasksStatus  ?'./assets/active-icon.svg':'./assets/completed-icon.svg'" alt="statsIcon" />
+  <div class="percentage-text d-flex  flex-column align-items-center ">
+    <p class="m-0 text-white fw-700">{{ Percentage }}%</p>
+    <p class="m-0 text-white fw-400 text-center">{{componentAction['Active'] == tasksStatus? 'Active Tasks':'Completed Tasks'}}</p>
+  </div>
+</div>

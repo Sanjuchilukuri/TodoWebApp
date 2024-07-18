@@ -1,0 +1,16 @@
+<div class="container-fluid w-auto ms-md-2 me-md-3 ms-1 me-3 mt-4 me-lg-5 ms-lg-4 p-2 d-flex justify-content-between rounded-2 text-white shadow-sm">
+  <div class="filters d-flex gap-sm-3 gap-2 p-0"> 
+    <label for="status"></label>
+    <select class="fw-400 rounded-2 outline-0 " name="status" id="status" (change)="ChangeStatusHandler($event)" [(ngModel)] ='selectedStatus'>
+      <ng-container *ngFor="let filter of filters | keyvalue">
+        <option [value]="filter.value.value" [defaultSelected]="filter.value.default">{{filter.key}}</option>
+      </ng-container>
+    </select>
+    <label for="date"></label>
+    <input type="date" id="date" class="fw-400 rounded-2 outline-0 p-2" [(ngModel)]="todayDate" (change)="ChangeDateHandler($event)" [max]="maxDate"/>
+  </div>
+  <div class="btns d-flex gap-sm-3 gap-2 p-0">
+    <button class="px-sm-3 px-2 rounded-2 fw-400 cursor-pointer border-0 text-white bg-secondary" type="button" (click)="applyFilters()">Apply</button>
+    <button class="px-sm-3 px-2 rounded-2 fw-400 cursor-pointer text-black border-1" type="button" (click)="resetFilters()">Reset</button>
+  </div>
+</div>

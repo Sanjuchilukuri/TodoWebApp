@@ -1,0 +1,16 @@
+.mobile-navigation{
+    top: 5rem;
+    background-image: url(../../../../public/assets/down-arrow-bold.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    font-size: 1rem;
+    .options-wrapper{
+        box-shadow: 2px 4px 8px 0px var(--box-shadow-color);
+        & > div{
+            font-size: 1rem;
+        }
+    }
+}
+.show{
+    display: block !important;
+}

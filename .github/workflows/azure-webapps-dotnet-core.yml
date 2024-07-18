@@ -1,0 +1,38 @@
+name: Deploy Todo App
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+env:
+  AZURE_WEBAPI_NAME: todoappv1
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Restore
+        run: dotnet restore ./Api/ToDo.sln
+
+      - name: Build
+        run: dotnet build ./Api/ToDo.sln --configuration Release --no-restore
+
+      - name: Publish WebAPI Project
+        run: dotnet publish ./Api/ToDo.WebApi/ToDo.WebApi.csproj --configuration Release --no-build --output './publish/ToDo.WebApi'
+
+      - name: Deployment
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: ${{ env.AZURE_WEBAPI_NAME }}
+          publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
+          package: "./publish/WebApi"

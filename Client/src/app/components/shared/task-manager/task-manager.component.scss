@@ -1,0 +1,35 @@
+.tasks-container {
+  ul {
+    li {
+      cursor: pointer;
+      img {
+        width: 23px;
+      }
+      
+    }
+  }
+}
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 600px) {
+  .details-box {
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  div{
+  margin: 2rem 1.2rem 0rem 1rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  span {
+    display: none;
+  }
+  .header p{
+    font-size: .8rem;
+  }
+}

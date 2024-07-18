@@ -1,0 +1,45 @@
+aside {
+  width: 15rem;
+  top: .5rem !important;
+  .sidebar-wrapper {
+    .logo {
+      h1 {
+        line-height: 45px;
+        font-size: 2.1rem;
+      }
+    }
+    .add-task-btn {
+      width: 9rem;
+      cursor: pointer;
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+    ul {
+      li {
+        cursor: pointer;
+        font-size: 14px;
+        &:active {
+          transform: scale(0.98);
+        }
+      }
+    }
+  }
+}
+
+.active {
+  background: var(--primary-color);
+}
+
+@media screen and (max-width: 1120px) {
+  aside {
+    width:10rem;
+  }
+  h1{
+    font-size: 1.5rem !important;
+  }
+}

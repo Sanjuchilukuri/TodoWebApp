@@ -1,0 +1,50 @@
+.container-fluid {
+  background: url(../../../../public/assets/auth-background.jpg);
+  .content-container {
+    transition: all .3s ease-in-out;
+    .title {
+      h1 {
+        font-size: 2.2rem;
+        line-height: 3.1rem;
+      }
+      p {
+        font-size: 0.7rem;
+        line-height: 1rem;
+      }
+    }
+
+    form {
+      input {
+        &::placeholder {
+          font-weight: 400 !important;
+          color: var(--text-grey) !important;
+        }
+      }
+
+      .error {
+        font-size: 0.7rem;
+      }
+
+      .btn-wrapper {
+        p {
+          font-size: 0.7rem;
+          span {
+            cursor: pointer;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .password-input-wrapper {
+      img {
+        cursor: pointer;
+        right: 1.4rem;
+        height: 1.5rem;
+        top: 20%;
+      }
+    }
+  }
+}

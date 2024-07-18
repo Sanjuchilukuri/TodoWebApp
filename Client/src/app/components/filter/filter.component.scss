@@ -1,0 +1,26 @@
+.container-fluid {
+  border: 1px solid #ccc;
+  .filters {
+    height:2rem;
+    select,
+    input {
+      font-size: .8rem;
+      border: 1px solid #ccc;
+      outline: none;
+      padding: 5px;
+    }
+  }
+  .btns {
+    height:2rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 470px){
+  button{
+    font-size: .8rem;
+  }
+  select, input{
+    font-size: .5rem !important;
+  }
+}

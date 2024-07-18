@@ -1,0 +1,117 @@
+.hero-section {
+  height: 30%;
+  .hero-section-left {
+    .text {
+      h2 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+    @media screen and (max-width: 1145px) {
+      h2 {
+        font-size: 2.5rem !important;
+      }
+    }
+    @media screen and (max-width: 785px) {
+      h2 {
+        font-size: 4vw !important;
+      }
+    }
+  }
+  .hero-section-right {
+    img {
+      bottom: -10%;
+      width: 100%;
+    }
+  }
+}
+
+.tasks {
+  .tasks-header {
+    .delete-date {
+      p {
+        font-size: 0.8rem;
+      }
+      p:first-child {
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .tasks-wrapper {
+    .task-list {
+      div {
+        img {
+          height: 23px;
+        }
+      }
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-section {
+    height: 25%;
+  }
+  .tasks-wrapper {
+    .task-list {
+      width: 100% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .tasks {
+    margin: 1rem !important;
+  }
+  .tasks-header {
+    h5 {
+      font-size: 1rem !important;
+    }
+    .delete-date {
+      p {
+        font-size: 0.6rem !important;
+      }
+    }
+  }
+  .task-list {
+    div {
+      img {
+        height: 0.9rem !important;
+      }
+      p {
+        font-size: 0.7rem !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .tasks-header {
+    h5 {
+      font-size: 0.8rem !important;
+    }
+    .delete-date {
+      p {
+        font-size: 0.5rem !important;
+      }
+    }
+  }
+  .task-list {
+    div {
+      img {
+        height: 0.9rem !important;
+      }
+      p {
+        font-size: 0.7rem !important;
+      }
+    }
+  }
+}

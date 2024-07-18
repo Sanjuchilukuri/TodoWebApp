@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+:root {
+  --primary-color: #edb046;
+  --secondary-color: #ba5112;
+  --text-white: #ffffff;
+  --text-grey: #b5b5b5;
+  --box-shadow-color: #0000001a;
+  --text-black: #251814;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: lexend, sans-serif;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+.bg-secondary {
+  background-color: var(--secondary-color) !important;
+}
+.bg-white {
+  background-color: var(--text-white) !important;
+}
+.bg-blur{
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.558);
+}
+.text-primary {
+  color: var(--primary-color) !important;
+}
+.text-secondary {
+  color: var(--secondary-color) !important;
+}
+.text-white {
+  color: var(--text-white) !important;
+}
+.text-black {
+  color: var(--text-black) !important;
+}
+.text-grey {
+  color: var(--text-grey) !important;
+}
+.fw-400 {
+  font-weight: 400 !important;
+}
+.fw-600 {
+  font-weight: 600 !important;
+}
+.fw-700 {
+  font-weight: 700 !important;
+}
+.outline-0 {
+  outline: none !important;
+}
+button {
+  &:active {
+    transform: scale(0.98);
+  }
+}

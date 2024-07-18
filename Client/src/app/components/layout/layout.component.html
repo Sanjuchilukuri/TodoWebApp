@@ -1,0 +1,8 @@
+<div class="container-fluid d-flex vh-100 vw-100 gap-lg-5 gap-3 p-0">
+  <app-sidenav></app-sidenav>
+  <div class="w-100">
+    <app-topbar [headerName]="componentName"></app-topbar>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<app-add-task-model></app-add-task-model>

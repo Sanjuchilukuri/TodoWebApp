@@ -1,0 +1,65 @@
+2024-07-11 15:16:37.643 +05:30 [INF] HTTP GET /todoitem responded 401 in 4.7288 ms
+2024-07-11 15:16:37.667 +05:30 [INF] HTTP GET /todoitem responded 401 in 0.3447 ms
+2024-07-11 15:16:37.694 +05:30 [INF] HTTP GET /token/eyJVc2VySWQiOjE3LCJJc3N1ZWRBdCI6IjIwMjQtMDctMTBUMTQ6Mjc6NDAuMjI5NDY2OFoiLCJFeHBpcmVzQXQiOiIyMDI0LTA3LTExVDE0OjI3OjQwLjIyOTQ2NzZaIn0= responded 200 in 16.8672 ms
+2024-07-11 15:16:37.872 +05:30 [INF] HTTP GET /todoitem responded 404 in 163.0219 ms
+2024-07-11 15:17:12.133 +05:30 [INF] HTTP POST /auth/login responded 200 in 202.8905 ms
+2024-07-11 15:17:12.168 +05:30 [INF] HTTP GET /todoitem responded 404 in 8.7176 ms
+2024-07-11 15:17:12.195 +05:30 [INF] HTTP GET /todoitem responded 404 in 15.0491 ms
+2024-07-11 16:40:59.394 +05:30 [INF] HTTP GET /todoitem responded 404 in 300.6435 ms
+2024-07-11 16:40:59.409 +05:30 [INF] HTTP GET /todoitem responded 404 in 8.2869 ms
+2024-07-11 16:41:00.064 +05:30 [INF] HTTP GET /todoitem responded 404 in 5.8243 ms
+2024-07-11 16:41:00.068 +05:30 [INF] HTTP GET /todoitem responded 404 in 1.8335 ms
+2024-07-11 16:41:06.027 +05:30 [INF] HTTP GET /todoitem responded 200 in 47.8976 ms
+2024-07-11 16:41:10.856 +05:30 [INF] HTTP GET /todoitem responded 404 in 91.7161 ms
+2024-07-11 16:41:13.572 +05:30 [INF] HTTP GET /todoitem responded 404 in 13.0302 ms
+2024-07-11 16:41:22.018 +05:30 [INF] HTTP POST /todoitem responded 201 in 63.1965 ms
+2024-07-11 16:41:22.054 +05:30 [INF] HTTP GET /todoitem responded 200 in 4.8622 ms
+2024-07-11 16:44:44.498 +05:30 [INF] HTTP GET /todoitem responded 200 in 16.1791 ms
+2024-07-11 16:44:44.502 +05:30 [INF] HTTP GET /todoitem responded 200 in 2.3818 ms
+2024-07-11 16:54:52.245 +05:30 [INF] HTTP POST /Auth/Login responded 200 in 538.6970 ms
+2024-07-11 16:55:01.096 +05:30 [INF] HTTP POST /Auth/Login responded 200 in 332.1374 ms
+2024-07-11 17:12:16.954 +05:30 [INF] HTTP GET /todoitem responded 200 in 257.5500 ms
+2024-07-11 17:12:16.970 +05:30 [INF] HTTP GET /todoitem responded 200 in 10.6190 ms
+2024-07-11 17:12:28.604 +05:30 [INF] HTTP POST /Auth/Login responded 200 in 265.5657 ms
+2024-07-11 17:13:49.051 +05:30 [INF] HTTP POST /Auth/Login responded 200 in 4914.3641 ms
+2024-07-11 17:23:31.555 +05:30 [INF] HTTP POST /Auth/Login responded 200 Error 
+System.Exception: Invalid credentials
+   at ToDo.WebApi.Controllers.AuthController.Login(LoginRegisterModel login) in C:\PROJ\CODE\full-web-app-Sanjuchilukuri\Api\ToDo.WebApi\Controllers\AuthController.cs:line 52
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ToDo.WebApi.Middleware.Logging.InvokeAsync(HttpContext context) in C:\PROJ\CODE\full-web-app-Sanjuchilukuri\Api\ToDo.WebApi\Middleware\Logging.cs:line 34
+
+2024-07-11 17:25:44.598 +05:30 [INF] HTTP POST /Auth/Login responded 200 in 652.1975 ms
+2024-07-11 17:25:54.015 +05:30 [INF] HTTP POST /Auth/Login responded 200 Error 
+System.Exception: Invalid credentials
+   at ToDo.WebApi.Controllers.AuthController.Login(LoginRegisterModel login) in C:\PROJ\CODE\full-web-app-Sanjuchilukuri\Api\ToDo.WebApi\Controllers\AuthController.cs:line 52
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ToDo.WebApi.Middleware.Logging.InvokeAsync(HttpContext context) in C:\PROJ\CODE\full-web-app-Sanjuchilukuri\Api\ToDo.WebApi\Middleware\Logging.cs:line 34
+
+2024-07-11 17:25:58.987 +05:30 [INF] HTTP GET /todoitem responded 401 in 122.0879 ms
+2024-07-11 17:25:58.997 +05:30 [INF] HTTP GET /todoitem responded 401 in 6.4194 ms
+2024-07-11 17:25:59.181 +05:30 [INF] HTTP GET /token/eyJVc2VySWQiOjMsIklzc3VlZEF0IjoiMjAyNC0wNy0xMVQwOTo0NzoxMi4xMzMwMjhaIiwiRXhwaXJlc0F0IjoiMjAyNC0wNy0xMlQwOTo0NzoxMi4xMzMwMjhaIn0= responded 200 in 179.2332 ms
+2024-07-11 17:25:59.326 +05:30 [INF] HTTP GET /todoitem responded 200 in 138.8154 ms
+2024-07-11 20:01:42.343 +05:30 [INF] HTTP GET /todoitem responded 401 in 16.2625 ms
+2024-07-11 20:01:42.510 +05:30 [INF] HTTP GET /todoitem responded 401 in 1.7749 ms
+2024-07-11 20:01:42.686 +05:30 [INF] HTTP GET /token/eyJVc2VySWQiOjMsIklzc3VlZEF0IjoiMjAyNC0wNy0xMVQxMTo1NTo1OS4xNjkyODE2WiIsIkV4cGlyZXNBdCI6IjIwMjQtMDctMTJUMTE6NTU6NTkuMTY5MjgxOFoifQ== responded 200 in 21.0347 ms
+2024-07-11 20:01:43.481 +05:30 [INF] HTTP GET /todoitem responded 200 in 697.6699 ms

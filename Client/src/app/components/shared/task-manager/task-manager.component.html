@@ -1,0 +1,23 @@
+<div class="tasks-container mt-3 me-md-5 me-3 ms-1" *ngFor="let tasks of tasksByDate">
+  <div class="header m-0 d-flex align-items-center justify-content-between">
+    <h5 class="text-black fw-600">{{ isToday(tasks[0].createdOn) ? "Today's" : "" }}<span>{{ componentAction | titlecase }}</span> Tasks</h5>
+    <p class="text-black fw-400">{{ tasks[0].createdOn | date : "EEEE, dd MMMM yyyy" }}</p>
+  </div>
+  <ul class="list m-0 p-0">
+    <ng-container *ngFor="let task of tasks">
+      <li class="position-relative mt-3 rounded-3 d-flex align-items-center gap-3 shadow-sm p-2" [class]="componentAction == componentActions.Active? 'bg-white': 'bg-primary'" (click)="displayDetails(task)">
+        <img [src]=" componentAction == componentActions.Active ? './assets/check-box-active.svg' : './assets/check-box-completed.svg'" alt="checkbox-image"/>
+        <p class="m-0">{{ task.title }}</p>
+        <app-task-details-popup *ngIf="clickeditem == task.id" [componentAction]="componentAction" [task]="taskToSend" (refreshTasksEvent)="refreshTasks($event)"></app-task-details-popup>
+      </li>
+    </ng-container>
+    <p *ngIf="tasks.length == 0" [style.text-align]="'center'">No {{ componentAction }} Tasks Found</p>
+  </ul>
+</div>
+<div *ngIf="tasksByDate.length === 0">
+  <div class="header  m-0 me-5 d-flex align-items-center justify-content-between">
+    <h5 class="text-black fw-600">Today's <span>{{ componentAction | titlecase }}</span> Tasks</h5>
+    <p class="text-black fw-400">{{ todayDate | date : "EEEE, dd MMMM yyyy" }}</p>
+  </div>
+  <p class="m-0 text-center" >No Taks Found</p>
+</div>

@@ -1,0 +1,48 @@
+<section class="hero-section justify-content-space-evenly ms-lg-4 me-lg-5 ms-0 me-3 row shadow-sm">
+  <div class="hero-section-left p-0 d-flex flex-column justify-content-center align-items-center col-sm-9 col-8">
+    <div class="text">
+      <h2 class="fw-700 text-black">Hello, Beautiful Human!</h2>
+      <p class="fw-400 mt-2 text-black">what do you want to do today?</p>
+    </div>
+  </div>
+  <div class="hero-section-right p-0 position-relative col-sm-3 col-4">
+    <img class="position-absolute h-100" src="./assets/young smiling woman working at laptop.png" alt="welcomeImage"/>
+  </div>
+</section>
+
+<app-filter (filterChange)="handleFilterChanges($event)"></app-filter>
+
+<section class="tasks mt-3 ms-4 me-5">
+
+  <div class="task-statsmb-3 hide d-md-none d-flex  justify-content-evenly ">
+    <app-task-stats [Percentage] = "activePercentage" tasksStatus="active"></app-task-stats>
+    <app-task-stats [Percentage] = "completedPercentage " tasksStatus="completed"></app-task-stats>
+  </div>
+
+  <div class="tasks-header row m-0 justify-content-between align-items-center">
+    <h5 class="fw-700 text-black col-md-4 col-6 p-0 m-0 ">{{ isToday() ? 'Today\'s' : '' }} {{action | titlecase}} Tasks</h5>
+    <div class="delete-date col-md-4 col-sm-5 col-6 p-0 d-flex justify-content-between gap-md-4 gap-0">
+      <p class="m-0 fw-400 text-secondary" (click)="deleteAllTasks()">Delete all</p>
+      <p class="m-0 fw-400 text-black">{{ datetoShow | date : "EEEE, dd MMMM yyyy" }}</p>
+    </div>
+  </div>
+  
+  <div class="tasks-wrapper d-flex justify-content-between mt-2">
+  
+    <div class="task-list  col-10 w-75 ">
+      <ng-container *ngFor="let task of allTasks">
+        <div class="mt-2 d-flex align-items-center gap-2 rounded-2 shadow-sm p-2" [class]=" task.isCompleted ? 'bg-primary' : 'bg-white'">
+          <img [src]=" task.isCompleted ? './assets/check-box-completed.svg' : './assets/check-box-active.svg' " alt="check-box-active-Icon"/>
+          <p class="fw-400 text-black m-0">{{ task.title }}</p>
+        </div>
+      </ng-container>
+      <p *ngIf="allTasks.length == 0" [style.text-align]="'center'">No Tasks Found</p>
+    </div>
+    
+   <div class="d-md-flex flex-column gap-2 d-none show col-2">
+      <app-task-stats [Percentage] = "activePercentage" tasksStatus="active"></app-task-stats>
+      <app-task-stats [Percentage] = "completedPercentage " tasksStatus="completed"></app-task-stats>
+   </div>
+
+  </div>
+</section>

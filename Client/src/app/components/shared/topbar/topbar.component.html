@@ -1,0 +1,15 @@
+<header class="z-2 w-100 py-3 pe-3 ps-0 d-flex justify-content-between position-sticky top-0 bg-white ">
+  <p class="heading d-lg-block d-none fw-400 text-black m-0 ">{{ headerName | titlecase }}</p>
+  <h1 class="d-block text-secondary fw-700 d-lg-none">To-Do App</h1>
+  <div class="btns-wrapper d-flex align-items-center justify-content-end gap-3">
+    <div class="add-task-btn d-lg-none d-flex align-items-center justify-content-between py-2 px-3 rounded-2 gap-3 shadow " (click)="showAddTaskModel()">
+      <p class="fw-400 text-black m-0">Add Task</p>
+      <img src="./assets/add-task-btn.png" alt="add-task-btn" />
+    </div>
+    <button class="sign-out-btn rounded-2 outline-0 border-0 text-white fw-400 bg-secondary cursor-pointer py-2 px-3" (click)="logout()">
+      Sign out
+      <img src="./assets/logout.svg" alt="logout-icon">
+    </button>
+  </div>
+</header>
+<app-mobile-navigation></app-mobile-navigation>

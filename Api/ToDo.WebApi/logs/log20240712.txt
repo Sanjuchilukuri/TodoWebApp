@@ -1,0 +1,368 @@
+2024-07-12 11:25:50.515 +05:30 [INF] HTTP GET /todoitem responded 401 in 57.2903 ms
+2024-07-12 11:25:50.705 +05:30 [INF] HTTP GET /todoitem responded 401 in 0.7854 ms
+2024-07-12 11:25:51.810 +05:30 [INF] HTTP GET /token/eyJVc2VySWQiOjMsIklzc3VlZEF0IjoiMjAyNC0wNy0xMVQxNDozMTo0Mi42NzgzNzk1WiIsIkV4cGlyZXNBdCI6IjIwMjQtMDctMTJUMTQ6MzE6NDIuNjc4MzgwM1oifQ== responded 200 in 8.5656 ms
+2024-07-12 11:25:52.366 +05:30 [INF] HTTP GET /todoitem responded 404 in 301.9574 ms
+2024-07-12 11:44:08.745 +05:30 [INF] HTTP POST /auth/login responded 200 Error 
+System.Exception: Invalid credentials
+   at ToDo.WebApi.Controllers.AuthController.Login(LoginRegisterModel login) in C:\PROJ\CODE\full-web-app-Sanjuchilukuri\Api\ToDo.WebApi\Controllers\AuthController.cs:line 52
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ToDo.WebApi.Middleware.Logging.InvokeAsync(HttpContext context) in C:\PROJ\CODE\full-web-app-Sanjuchilukuri\Api\ToDo.WebApi\Middleware\Logging.cs:line 34
+
+2024-07-12 11:44:16.374 +05:30 [INF] HTTP POST /auth/login responded 200 in 460.2834 ms
+2024-07-12 11:44:16.506 +05:30 [INF] HTTP GET /todoitem responded 404 in 44.4478 ms
+2024-07-12 11:44:16.521 +05:30 [INF] HTTP GET /todoitem responded 404 in 5.2938 ms
+2024-07-12 11:44:38.045 +05:30 [INF] HTTP GET /todoitem responded 404 in 12.7770 ms
+2024-07-12 11:44:38.053 +05:30 [INF] HTTP GET /todoitem responded 404 in 5.3535 ms
+2024-07-12 11:44:42.457 +05:30 [INF] HTTP GET /todoitem responded 404 in 11.3846 ms
+2024-07-12 11:44:42.463 +05:30 [INF] HTTP GET /todoitem responded 404 in 3.5893 ms
+2024-07-12 11:46:13.621 +05:30 [INF] HTTP GET /todoitem responded 404 in 11.4426 ms
+2024-07-12 11:46:13.628 +05:30 [INF] HTTP GET /todoitem responded 404 in 3.9460 ms
+2024-07-12 11:46:31.288 +05:30 [INF] HTTP GET /todoitem responded 404 in 12.2735 ms
+2024-07-12 11:46:31.300 +05:30 [INF] HTTP GET /todoitem responded 404 in 7.2886 ms
+2024-07-12 11:47:02.229 +05:30 [INF] HTTP GET /todoitem responded 404 in 24.1260 ms
+2024-07-12 11:47:02.237 +05:30 [INF] HTTP GET /todoitem responded 404 in 4.6659 ms
+2024-07-12 11:47:17.891 +05:30 [INF] HTTP GET /todoitem responded 404 in 4.4708 ms
+2024-07-12 11:47:17.898 +05:30 [INF] HTTP GET /todoitem responded 404 in 3.7414 ms
+2024-07-12 11:47:31.014 +05:30 [INF] HTTP GET /todoitem responded 404 in 4.2784 ms
+2024-07-12 11:47:31.022 +05:30 [INF] HTTP GET /todoitem responded 404 in 4.4966 ms
+2024-07-12 11:47:44.920 +05:30 [INF] HTTP GET /todoitem responded 404 in 6.9109 ms
+2024-07-12 11:47:44.925 +05:30 [INF] HTTP GET /todoitem responded 404 in 2.8532 ms
+2024-07-12 11:47:46.496 +05:30 [INF] HTTP GET /todoitem responded 404 in 5.9123 ms
+2024-07-12 11:47:46.511 +05:30 [INF] HTTP GET /todoitem responded 404 in 5.6677 ms
+2024-07-12 11:48:39.174 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 40.0412 ms
+2024-07-12 11:48:39.198 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 19.5632 ms
+2024-07-12 11:48:51.589 +05:30 [INF] HTTP GET /todoitem responded 404 in 15.9812 ms
+2024-07-12 11:48:51.603 +05:30 [INF] HTTP GET /todoitem responded 404 in 9.8232 ms
+2024-07-12 11:49:29.749 +05:30 [INF] HTTP GET /todoitem responded 404 in 13.4848 ms
+2024-07-12 11:49:35.959 +05:30 [INF] HTTP GET /todoitem responded 404 in 2.7750 ms
+2024-07-12 11:49:35.964 +05:30 [INF] HTTP GET /todoitem responded 404 in 3.3445 ms
+2024-07-12 11:49:36.957 +05:30 [INF] HTTP GET /todoitem responded 404 in 16.2864 ms
+2024-07-12 11:49:36.966 +05:30 [INF] HTTP GET /todoitem responded 404 in 5.7027 ms
+2024-07-12 11:50:18.934 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 8.4439 ms
+2024-07-12 11:50:18.940 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 3.5560 ms
+2024-07-12 11:50:20.261 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 6.7992 ms
+2024-07-12 11:50:20.269 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 4.2545 ms
+2024-07-12 11:50:21.785 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 5.8252 ms
+2024-07-12 11:50:21.800 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 6.0288 ms
+2024-07-12 11:50:23.141 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 9.4641 ms
+2024-07-12 11:50:23.164 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 14.6784 ms
+2024-07-12 11:50:35.376 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 7.1352 ms
+2024-07-12 11:50:35.387 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 3.5057 ms
+2024-07-12 11:50:35.724 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 4.6028 ms
+2024-07-12 11:50:35.733 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 5.1130 ms
+2024-07-12 11:50:37.156 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 12.3685 ms
+2024-07-12 11:50:37.182 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 15.8990 ms
+2024-07-12 11:50:39.395 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 8.3543 ms
+2024-07-12 11:50:39.420 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 11.4475 ms
+2024-07-12 11:50:55.123 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 25.1445 ms
+2024-07-12 11:50:55.140 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 7.5114 ms
+2024-07-12 11:50:56.186 +05:30 [INF] HTTP GET /todoitem responded 404 in 11.5411 ms
+2024-07-12 11:50:56.196 +05:30 [INF] HTTP GET /todoitem responded 404 in 6.0500 ms
+2024-07-12 11:50:57.435 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 6.3257 ms
+2024-07-12 11:50:57.453 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 10.1241 ms
+2024-07-12 11:50:59.356 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 13.2765 ms
+2024-07-12 11:50:59.381 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 9.1589 ms
+2024-07-12 11:51:00.301 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 3.6952 ms
+2024-07-12 11:51:00.314 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 3.3581 ms
+2024-07-12 11:51:01.394 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 6.2990 ms
+2024-07-12 11:51:01.416 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 13.4195 ms
+2024-07-12 11:51:02.278 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 3.0769 ms
+2024-07-12 11:51:02.291 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 5.4424 ms
+2024-07-12 11:51:03.325 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 4.1373 ms
+2024-07-12 11:51:03.332 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 3.1210 ms
+2024-07-12 11:51:04.338 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 7.1272 ms
+2024-07-12 11:51:04.359 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 7.6531 ms
+2024-07-12 11:51:05.243 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 4.4385 ms
+2024-07-12 11:51:05.261 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 8.7546 ms
+2024-07-12 11:51:06.234 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 3.9480 ms
+2024-07-12 11:51:06.247 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 5.8765 ms
+2024-07-12 11:51:07.924 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 14.3917 ms
+2024-07-12 11:51:07.961 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 13.8182 ms
+2024-07-12 11:51:09.437 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 2.1633 ms
+2024-07-12 11:51:09.452 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 8.5964 ms
+2024-07-12 11:51:10.405 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 5.4032 ms
+2024-07-12 11:51:10.430 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 8.5656 ms
+2024-07-12 11:51:12.976 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 3.2633 ms
+2024-07-12 11:51:12.985 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 3.2068 ms
+2024-07-12 11:51:14.135 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 25.8507 ms
+2024-07-12 11:51:14.152 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 9.4117 ms
+2024-07-12 11:55:22.086 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 20.3624 ms
+2024-07-12 11:55:22.150 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 10.6154 ms
+2024-07-12 11:55:30.997 +05:30 [INF] HTTP GET /todoitem responded 404 in 7.7291 ms
+2024-07-12 11:55:31.003 +05:30 [INF] HTTP GET /todoitem responded 404 in 3.0564 ms
+2024-07-12 11:58:21.057 +05:30 [INF] HTTP GET /todoitem responded 404 in 6.6693 ms
+2024-07-12 11:58:21.063 +05:30 [INF] HTTP GET /todoitem responded 404 in 3.7024 ms
+2024-07-12 11:58:29.327 +05:30 [INF] HTTP GET /todoitem responded 404 in 2.5813 ms
+2024-07-12 11:58:29.333 +05:30 [INF] HTTP GET /todoitem responded 404 in 3.3283 ms
+2024-07-12 11:58:32.489 +05:30 [INF] HTTP GET /todoitem responded 404 in 2.9983 ms
+2024-07-12 11:58:32.516 +05:30 [INF] HTTP GET /todoitem responded 404 in 17.3787 ms
+2024-07-12 11:58:41.409 +05:30 [INF] HTTP GET /todoitem responded 404 in 17.2894 ms
+2024-07-12 11:58:41.423 +05:30 [INF] HTTP GET /todoitem responded 404 in 10.0253 ms
+2024-07-12 11:58:41.796 +05:30 [INF] HTTP GET /todoitem responded 404 in 1.8440 ms
+2024-07-12 11:58:41.806 +05:30 [INF] HTTP GET /todoitem responded 404 in 2.9081 ms
+2024-07-12 11:58:42.831 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 7.5062 ms
+2024-07-12 11:58:42.843 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 4.5293 ms
+2024-07-12 11:58:56.049 +05:30 [INF] HTTP GET /todoitem responded 404 in 2.5795 ms
+2024-07-12 11:58:56.055 +05:30 [INF] HTTP GET /todoitem responded 404 in 3.4269 ms
+2024-07-12 11:58:56.849 +05:30 [INF] HTTP GET /todoitem responded 404 in 2.6970 ms
+2024-07-12 11:58:56.877 +05:30 [INF] HTTP GET /todoitem responded 404 in 14.0216 ms
+2024-07-12 11:58:57.260 +05:30 [INF] HTTP GET /todoitem responded 404 in 2.6446 ms
+2024-07-12 11:58:57.267 +05:30 [INF] HTTP GET /todoitem responded 404 in 3.4662 ms
+2024-07-12 11:59:05.531 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 6.0370 ms
+2024-07-12 11:59:05.540 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 4.3615 ms
+2024-07-12 11:59:09.972 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 2.1553 ms
+2024-07-12 11:59:09.985 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 8.5502 ms
+2024-07-12 11:59:11.087 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 5.7296 ms
+2024-07-12 11:59:11.095 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 2.9533 ms
+2024-07-12 12:06:43.607 +05:30 [INF] HTTP POST /auth/login responded 200 in 375.3136 ms
+2024-07-12 12:06:43.706 +05:30 [INF] HTTP GET /todoitem responded 404 in 43.0233 ms
+2024-07-12 12:06:43.723 +05:30 [INF] HTTP GET /todoitem responded 404 in 7.0372 ms
+2024-07-12 12:14:42.731 +05:30 [INF] HTTP POST /todoitem responded 201 in 733.7447 ms
+2024-07-12 12:14:42.808 +05:30 [INF] HTTP GET /todoitem responded 200 in 23.0241 ms
+2024-07-12 12:14:42.836 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 50.7022 ms
+2024-07-12 12:15:24.330 +05:30 [INF] HTTP GET /todoitem responded 200 in 10.5848 ms
+2024-07-12 12:15:24.337 +05:30 [INF] HTTP GET /todoitem responded 200 in 3.4988 ms
+2024-07-12 12:15:29.177 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 9.2845 ms
+2024-07-12 12:15:29.193 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 12.6833 ms
+2024-07-12 12:58:01.078 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 27.3530 ms
+2024-07-12 12:58:01.083 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 1.5622 ms
+2024-07-12 15:38:46.643 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 401 in 138.8327 ms
+2024-07-12 15:38:46.697 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 401 in 10.4472 ms
+2024-07-12 15:38:46.904 +05:30 [INF] HTTP GET /token/eyJVc2VySWQiOjMsIklzc3VlZEF0IjoiMjAyNC0wNy0xMlQwNjozNjo0My42MDc0MzA4WiIsIkV4cGlyZXNBdCI6IjIwMjQtMDctMTNUMDY6MzY6NDMuNjA3NDMxMVoifQ== responded 200 in 205.5883 ms
+2024-07-12 15:38:48.016 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 1108.0889 ms
+2024-07-12 15:38:49.778 +05:30 [INF] HTTP GET /todoitem responded 200 in 107.6865 ms
+2024-07-12 15:38:49.860 +05:30 [INF] HTTP GET /todoitem responded 200 in 79.6918 ms
+2024-07-12 15:39:38.227 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 23.8330 ms
+2024-07-12 15:39:38.250 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 10.3968 ms
+2024-07-12 15:39:44.326 +05:30 [INF] HTTP PATCH /todoitem/104 responded 200 in 253.4237 ms
+2024-07-12 15:39:44.349 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 9.5072 ms
+2024-07-12 15:39:51.440 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 6.0099 ms
+2024-07-12 15:39:51.457 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 9.5493 ms
+2024-07-12 15:39:56.168 +05:30 [INF] HTTP DELETE /todoitem/104 responded 200 in 83.2143 ms
+2024-07-12 15:39:56.188 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 9.4720 ms
+2024-07-12 15:40:19.465 +05:30 [INF] HTTP POST /auth/login responded 200 in 508.6355 ms
+2024-07-12 15:40:19.579 +05:30 [INF] HTTP GET /todoitem responded 404 in 40.3467 ms
+2024-07-12 15:40:19.604 +05:30 [INF] HTTP GET /todoitem responded 404 in 18.0724 ms
+2024-07-12 15:40:22.134 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 6.8194 ms
+2024-07-12 15:40:22.151 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 11.1162 ms
+2024-07-12 15:40:27.204 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 14.1349 ms
+2024-07-12 15:40:27.233 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 16.7569 ms
+2024-07-12 15:41:05.574 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 11.8999 ms
+2024-07-12 15:41:05.585 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 7.3780 ms
+2024-07-12 15:41:08.882 +05:30 [INF] HTTP GET /todoitem/96 responded 200 in 10.0339 ms
+2024-07-12 15:41:08.891 +05:30 [INF] HTTP GET /todoitem/96 responded 200 in 5.9612 ms
+2024-07-12 15:41:20.672 +05:30 [INF] HTTP GET /todoitem/48 responded 200 in 14.4588 ms
+2024-07-12 15:41:20.685 +05:30 [INF] HTTP GET /todoitem/48 responded 200 in 7.2744 ms
+2024-07-12 15:41:26.135 +05:30 [INF] HTTP GET /todoitem/41 responded 200 in 7.9123 ms
+2024-07-12 15:41:26.147 +05:30 [INF] HTTP GET /todoitem/41 responded 200 in 5.6231 ms
+2024-07-12 15:41:33.291 +05:30 [INF] HTTP GET /todoitem/42 responded 200 in 7.9673 ms
+2024-07-12 15:41:33.302 +05:30 [INF] HTTP GET /todoitem/42 responded 200 in 4.4120 ms
+2024-07-12 15:41:39.706 +05:30 [INF] HTTP GET /todoitem/4 responded 200 in 5.0098 ms
+2024-07-12 15:41:39.716 +05:30 [INF] HTTP GET /todoitem/4 responded 200 in 5.7086 ms
+2024-07-12 15:41:46.880 +05:30 [INF] HTTP GET /todoitem responded 404 in 12.9308 ms
+2024-07-12 15:41:46.892 +05:30 [INF] HTTP GET /todoitem responded 404 in 7.8086 ms
+2024-07-12 15:41:48.941 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 15.9312 ms
+2024-07-12 15:41:48.950 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 6.2650 ms
+2024-07-12 15:41:53.664 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 9.0704 ms
+2024-07-12 15:41:53.675 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 3.7724 ms
+2024-07-12 15:42:01.432 +05:30 [INF] HTTP GET /todoitem responded 404 in 10.5221 ms
+2024-07-12 15:42:01.444 +05:30 [INF] HTTP GET /todoitem responded 404 in 7.1185 ms
+2024-07-12 15:42:13.430 +05:30 [INF] HTTP DELETE /todoitem responded 200 Error 
+System.Exception: something went wrong
+   at ToDo.WebApi.Controllers.ToDoItemController.DeleteAllTasks(Filters filters) in C:\PROJ\CODE\full-web-app-Sanjuchilukuri\Api\ToDo.WebApi\Controllers\ToDoItemController.cs:line 125
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ToDo.WebApi.Middleware.Logging.InvokeAsync(HttpContext context) in C:\PROJ\CODE\full-web-app-Sanjuchilukuri\Api\ToDo.WebApi\Middleware\Logging.cs:line 34
+
+2024-07-12 15:42:34.120 +05:30 [INF] HTTP POST /auth/login responded 200 Error 
+System.Exception: Invalid credentials
+   at ToDo.WebApi.Controllers.AuthController.Login(LoginRegisterModel login) in C:\PROJ\CODE\full-web-app-Sanjuchilukuri\Api\ToDo.WebApi\Controllers\AuthController.cs:line 52
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ToDo.WebApi.Middleware.Logging.InvokeAsync(HttpContext context) in C:\PROJ\CODE\full-web-app-Sanjuchilukuri\Api\ToDo.WebApi\Middleware\Logging.cs:line 34
+
+2024-07-12 15:42:43.757 +05:30 [INF] HTTP POST /auth/login responded 200 in 151.2228 ms
+2024-07-12 15:42:43.800 +05:30 [INF] HTTP GET /todoitem/4 responded 400 in 18.0136 ms
+2024-07-12 15:42:43.815 +05:30 [INF] HTTP GET /todoitem responded 200 in 33.5400 ms
+2024-07-12 15:42:43.830 +05:30 [INF] HTTP GET /todoitem responded 200 in 8.2743 ms
+2024-07-12 15:43:16.160 +05:30 [INF] HTTP POST /auth/login responded 200 Error 
+System.Exception: Invalid credentials
+   at ToDo.WebApi.Controllers.AuthController.Login(LoginRegisterModel login) in C:\PROJ\CODE\full-web-app-Sanjuchilukuri\Api\ToDo.WebApi\Controllers\AuthController.cs:line 52
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ToDo.WebApi.Middleware.Logging.InvokeAsync(HttpContext context) in C:\PROJ\CODE\full-web-app-Sanjuchilukuri\Api\ToDo.WebApi\Middleware\Logging.cs:line 34
+
+2024-07-12 15:43:24.335 +05:30 [INF] HTTP POST /auth/login responded 200 in 148.2666 ms
+2024-07-12 15:43:24.368 +05:30 [INF] HTTP GET /todoitem/4 responded 400 in 8.7348 ms
+2024-07-12 15:43:24.382 +05:30 [INF] HTTP GET /todoitem responded 200 in 22.1546 ms
+2024-07-12 15:43:24.412 +05:30 [INF] HTTP GET /todoitem responded 200 in 16.1364 ms
+2024-07-12 15:43:46.711 +05:30 [INF] HTTP POST /auth/login responded 200 in 139.9978 ms
+2024-07-12 15:43:46.758 +05:30 [INF] HTTP GET /todoitem/4 responded 400 in 11.1920 ms
+2024-07-12 15:43:46.764 +05:30 [INF] HTTP GET /todoitem responded 200 in 2.8137 ms
+2024-07-12 15:43:46.769 +05:30 [INF] HTTP GET /todoitem responded 200 in 3.2509 ms
+2024-07-12 15:46:02.710 +05:30 [INF] HTTP GET /todoitem/4 responded 401 in 0.1550 ms
+2024-07-12 15:46:51.241 +05:30 [INF] HTTP GET /todoitem responded 200 in 15.6751 ms
+2024-07-12 15:46:51.270 +05:30 [INF] HTTP GET /todoitem responded 200 in 25.9271 ms
+2024-07-12 15:46:52.477 +05:30 [INF] HTTP GET /todoitem responded 200 in 2.0599 ms
+2024-07-12 15:46:52.484 +05:30 [INF] HTTP GET /todoitem responded 200 in 5.0337 ms
+2024-07-12 15:47:20.757 +05:30 [INF] HTTP GET /todoitem responded 200 in 2.4957 ms
+2024-07-12 15:47:20.763 +05:30 [INF] HTTP GET /todoitem responded 200 in 3.2504 ms
+2024-07-12 15:47:21.478 +05:30 [INF] HTTP GET /todoitem responded 200 in 4.3727 ms
+2024-07-12 15:47:21.482 +05:30 [INF] HTTP GET /todoitem responded 200 in 2.0006 ms
+2024-07-12 15:47:39.426 +05:30 [INF] HTTP GET /todoitem responded 200 in 6.1443 ms
+2024-07-12 15:47:39.431 +05:30 [INF] HTTP GET /todoitem responded 200 in 2.8318 ms
+2024-07-12 15:47:40.516 +05:30 [INF] HTTP GET /todoitem responded 200 in 1.8818 ms
+2024-07-12 15:47:40.520 +05:30 [INF] HTTP GET /todoitem responded 200 in 1.7868 ms
+2024-07-12 15:47:48.400 +05:30 [INF] HTTP GET /todoitem responded 200 in 20.7350 ms
+2024-07-12 15:47:48.414 +05:30 [INF] HTTP GET /todoitem responded 200 in 8.4435 ms
+2024-07-12 15:47:57.568 +05:30 [INF] HTTP POST /auth/login responded 200 in 144.1849 ms
+2024-07-12 15:47:57.588 +05:30 [INF] HTTP GET /todoitem responded 200 in 3.5381 ms
+2024-07-12 15:47:57.600 +05:30 [INF] HTTP GET /todoitem responded 200 in 4.3416 ms
+2024-07-12 15:48:02.293 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 7.5378 ms
+2024-07-12 15:48:02.304 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 5.3884 ms
+2024-07-12 15:48:09.556 +05:30 [INF] HTTP GET /todoitem/103 responded 200 in 8.4123 ms
+2024-07-12 15:48:09.568 +05:30 [INF] HTTP GET /todoitem/103 responded 200 in 7.2467 ms
+2024-07-12 15:48:21.035 +05:30 [INF] HTTP POST /auth/login responded 200 in 144.8205 ms
+2024-07-12 15:48:21.061 +05:30 [INF] HTTP GET /todoitem/103 responded 400 in 1.7126 ms
+2024-07-12 15:48:21.111 +05:30 [INF] HTTP GET /todoitem responded 404 in 51.5358 ms
+2024-07-12 15:48:21.125 +05:30 [INF] HTTP GET /todoitem responded 404 in 9.6348 ms
+2024-07-12 15:49:12.854 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 8.1142 ms
+2024-07-12 15:49:12.865 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 7.6834 ms
+2024-07-12 15:49:15.853 +05:30 [INF] HTTP GET /todoitem/41 responded 200 in 8.1022 ms
+2024-07-12 15:49:15.866 +05:30 [INF] HTTP GET /todoitem/41 responded 200 in 5.6339 ms
+2024-07-12 15:49:15.875 +05:30 [INF] HTTP GET /todoitem/41 responded 200 in 3.8612 ms
+2024-07-12 15:49:25.412 +05:30 [INF] HTTP POST /auth/login responded 200 in 163.3607 ms
+2024-07-12 15:49:25.438 +05:30 [INF] HTTP GET /todoitem/41 responded 200 in 1.9803 ms
+2024-07-12 15:49:25.460 +05:30 [INF] HTTP GET /todoitem responded 404 in 23.5791 ms
+2024-07-12 15:49:25.497 +05:30 [INF] HTTP GET /todoitem responded 404 in 9.2038 ms
+2024-07-12 15:49:51.781 +05:30 [INF] HTTP POST /auth/login responded 200 Error 
+System.Exception: Invalid credentials
+   at ToDo.WebApi.Controllers.AuthController.Login(LoginRegisterModel login) in C:\PROJ\CODE\full-web-app-Sanjuchilukuri\Api\ToDo.WebApi\Controllers\AuthController.cs:line 52
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ToDo.WebApi.Middleware.Logging.InvokeAsync(HttpContext context) in C:\PROJ\CODE\full-web-app-Sanjuchilukuri\Api\ToDo.WebApi\Middleware\Logging.cs:line 34
+
+2024-07-12 15:49:55.508 +05:30 [INF] HTTP POST /auth/login responded 200 in 151.1205 ms
+2024-07-12 15:49:55.535 +05:30 [INF] HTTP GET /todoitem/41 responded 400 in 4.8129 ms
+2024-07-12 15:49:55.550 +05:30 [INF] HTTP GET /todoitem responded 200 in 19.1725 ms
+2024-07-12 15:49:55.575 +05:30 [INF] HTTP GET /todoitem responded 200 in 12.2564 ms
+2024-07-12 15:52:03.886 +05:30 [INF] HTTP GET /todoitem responded 200 in 7.9851 ms
+2024-07-12 15:52:03.892 +05:30 [INF] HTTP GET /todoitem responded 200 in 3.0502 ms
+2024-07-12 15:52:04.242 +05:30 [INF] HTTP GET /todoitem responded 200 in 3.4639 ms
+2024-07-12 15:52:04.252 +05:30 [INF] HTTP GET /todoitem responded 200 in 7.0742 ms
+2024-07-12 15:52:06.281 +05:30 [INF] HTTP GET /todoitem responded 200 in 1.6316 ms
+2024-07-12 15:52:06.285 +05:30 [INF] HTTP GET /todoitem responded 200 in 1.9182 ms
+2024-07-12 15:52:07.538 +05:30 [INF] HTTP GET /todoitem responded 200 in 1.8609 ms
+2024-07-12 15:52:07.543 +05:30 [INF] HTTP GET /todoitem responded 200 in 2.3384 ms
+2024-07-12 15:52:11.671 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 6.9927 ms
+2024-07-12 15:52:11.679 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 4.5279 ms
+2024-07-12 15:52:21.156 +05:30 [INF] HTTP POST /auth/login responded 200 in 154.1420 ms
+2024-07-12 15:52:21.183 +05:30 [INF] HTTP GET /todoitem responded 200 in 5.7237 ms
+2024-07-12 15:52:21.195 +05:30 [INF] HTTP GET /todoitem responded 200 in 7.9001 ms
+2024-07-12 15:52:27.603 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 14.2913 ms
+2024-07-12 15:52:27.613 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 5.6494 ms
+2024-07-12 15:52:38.038 +05:30 [INF] HTTP POST /auth/login responded 200 in 165.4823 ms
+2024-07-12 15:52:38.074 +05:30 [INF] HTTP GET /todoitem responded 404 in 6.3816 ms
+2024-07-12 15:52:38.106 +05:30 [INF] HTTP GET /todoitem responded 404 in 14.0973 ms
+2024-07-12 15:52:47.691 +05:30 [INF] HTTP POST /auth/login responded 200 in 156.8897 ms
+2024-07-12 15:52:47.712 +05:30 [INF] HTTP GET /todoitem responded 200 in 2.9185 ms
+2024-07-12 15:52:47.756 +05:30 [INF] HTTP GET /todoitem responded 200 in 32.1073 ms
+2024-07-12 16:03:09.362 +05:30 [INF] HTTP POST /auth/login responded 200 in 161.7795 ms
+2024-07-12 16:03:09.446 +05:30 [INF] HTTP GET /todoitem responded 200 in 7.4785 ms
+2024-07-12 16:03:09.453 +05:30 [INF] HTTP GET /todoitem responded 200 in 3.1869 ms
+2024-07-12 16:03:16.598 +05:30 [INF] HTTP GET /todoitem responded 200 in 23.7030 ms
+2024-07-12 16:03:16.609 +05:30 [INF] HTTP GET /todoitem responded 200 in 6.7932 ms
+2024-07-12 16:03:20.046 +05:30 [INF] HTTP GET /todoitem responded 200 in 46.4246 ms
+2024-07-12 16:03:20.096 +05:30 [INF] HTTP GET /todoitem responded 200 in 27.5794 ms
+2024-07-12 16:03:27.915 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 4.9669 ms
+2024-07-12 16:03:27.928 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 8.0150 ms
+2024-07-12 16:03:30.113 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 3.3603 ms
+2024-07-12 16:03:30.134 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 16.4203 ms
+2024-07-12 16:03:57.607 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 2.4503 ms
+2024-07-12 16:03:57.617 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 4.8027 ms
+2024-07-12 16:03:59.428 +05:30 [INF] HTTP GET /todoitem responded 200 in 14.1200 ms
+2024-07-12 16:03:59.435 +05:30 [INF] HTTP GET /todoitem responded 200 in 4.9836 ms
+2024-07-12 16:04:13.170 +05:30 [INF] HTTP GET /todoitem responded 200 in 4.0394 ms
+2024-07-12 16:04:13.175 +05:30 [INF] HTTP GET /todoitem responded 200 in 2.4050 ms
+2024-07-12 16:04:44.554 +05:30 [INF] HTTP GET /todoitem responded 200 in 7.2619 ms
+2024-07-12 16:04:44.560 +05:30 [INF] HTTP GET /todoitem responded 200 in 2.9888 ms
+2024-07-12 16:05:05.394 +05:30 [INF] HTTP GET /todoitem responded 200 in 3.0268 ms
+2024-07-12 16:05:05.399 +05:30 [INF] HTTP GET /todoitem responded 200 in 2.0117 ms
+2024-07-12 16:05:11.913 +05:30 [INF] HTTP GET /todoitem responded 200 in 10.9207 ms
+2024-07-12 16:05:13.942 +05:30 [INF] HTTP GET /todoitem responded 200 in 12.9936 ms
+2024-07-12 16:05:13.952 +05:30 [INF] HTTP GET /todoitem responded 200 in 7.2492 ms
+2024-07-12 16:06:56.929 +05:30 [INF] HTTP GET /todoitem responded 200 in 5.2319 ms
+2024-07-12 16:06:56.934 +05:30 [INF] HTTP GET /todoitem responded 200 in 2.2939 ms
+2024-07-12 16:07:02.750 +05:30 [INF] HTTP GET /todoitem responded 200 in 2.8835 ms
+2024-07-12 16:07:02.756 +05:30 [INF] HTTP GET /todoitem responded 200 in 3.0819 ms
+2024-07-12 16:07:08.992 +05:30 [INF] HTTP GET /todoitem responded 200 in 2.5620 ms
+2024-07-12 16:07:08.997 +05:30 [INF] HTTP GET /todoitem responded 200 in 2.7994 ms
+2024-07-12 16:07:13.396 +05:30 [INF] HTTP GET /todoitem responded 200 in 6.0937 ms
+2024-07-12 16:07:13.402 +05:30 [INF] HTTP GET /todoitem responded 200 in 3.0134 ms
+2024-07-12 16:07:23.052 +05:30 [INF] HTTP GET /todoitem responded 200 in 18.9893 ms
+2024-07-12 16:07:23.066 +05:30 [INF] HTTP GET /todoitem responded 200 in 5.6403 ms
+2024-07-12 16:07:24.004 +05:30 [INF] HTTP GET /todoitem responded 200 in 15.1615 ms
+2024-07-12 16:07:24.014 +05:30 [INF] HTTP GET /todoitem responded 200 in 4.2215 ms
+2024-07-12 16:07:38.818 +05:30 [INF] HTTP GET /todoitem responded 200 in 6.0839 ms
+2024-07-12 16:07:38.823 +05:30 [INF] HTTP GET /todoitem responded 200 in 3.3594 ms
+2024-07-12 16:07:42.809 +05:30 [INF] HTTP GET /todoitem responded 200 in 8.3546 ms
+2024-07-12 16:07:42.818 +05:30 [INF] HTTP GET /todoitem responded 200 in 5.6564 ms
+2024-07-12 16:08:03.763 +05:30 [INF] HTTP GET /todoitem responded 200 in 6.6982 ms
+2024-07-12 16:08:03.773 +05:30 [INF] HTTP GET /todoitem responded 200 in 5.4464 ms
+2024-07-12 16:08:16.178 +05:30 [INF] HTTP GET /todoitem responded 200 in 2.2294 ms
+2024-07-12 16:08:16.185 +05:30 [INF] HTTP GET /todoitem responded 200 in 2.7849 ms
+2024-07-12 16:08:46.889 +05:30 [INF] HTTP GET /todoitem responded 200 in 9.6922 ms
+2024-07-12 16:08:49.232 +05:30 [INF] HTTP GET /todoitem responded 200 in 9.8138 ms
+2024-07-12 16:08:49.264 +05:30 [INF] HTTP GET /todoitem responded 200 in 23.3185 ms
+2024-07-12 16:09:54.054 +05:30 [INF] HTTP GET /todoitem responded 200 in 6.2908 ms
+2024-07-12 16:09:54.061 +05:30 [INF] HTTP GET /todoitem responded 200 in 2.6869 ms
+2024-07-12 16:10:10.567 +05:30 [INF] HTTP GET /todoitem responded 200 in 12.9332 ms
+2024-07-12 16:10:10.582 +05:30 [INF] HTTP GET /todoitem responded 200 in 11.3000 ms
+2024-07-12 16:10:16.799 +05:30 [INF] HTTP GET /todoitem responded 200 in 2.6581 ms
+2024-07-12 16:10:16.806 +05:30 [INF] HTTP GET /todoitem responded 200 in 4.6451 ms

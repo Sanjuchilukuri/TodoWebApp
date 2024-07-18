@@ -1,0 +1,12 @@
+2024-07-18 15:50:28.122 +05:30 [INF] HTTP POST /auth/login responded 200 in 4233.4357 ms
+2024-07-18 15:50:28.549 +05:30 [INF] HTTP GET /todoitem responded 404 in 311.4906 ms
+2024-07-18 15:50:28.729 +05:30 [INF] HTTP GET /todoitem responded 404 in 175.5770 ms
+2024-07-18 15:50:31.584 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 184.5488 ms
+2024-07-18 15:50:31.600 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 11.6485 ms
+2024-07-18 15:50:34.319 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 11.4911 ms
+2024-07-18 15:50:34.338 +05:30 [INF] HTTP GET /todoitem/tasksbystatus responded 200 in 13.0178 ms
+2024-07-18 15:50:37.882 +05:30 [INF] HTTP GET /todoitem responded 404 in 4.3723 ms
+2024-07-18 15:50:37.893 +05:30 [INF] HTTP GET /todoitem responded 404 in 5.9750 ms
+2024-07-18 15:56:15.268 +05:30 [INF] HTTP GET /todoitem responded 200 in 2160.0358 ms
+2024-07-18 15:56:15.273 +05:30 [INF] HTTP POST /todoitem responded 201 in 5069.7889 ms
+2024-07-18 15:56:15.555 +05:30 [INF] HTTP GET /todoitem responded 200 in 191.3054 ms

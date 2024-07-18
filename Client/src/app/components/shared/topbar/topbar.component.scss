@@ -1,0 +1,62 @@
+header {
+  .heading {
+    font-size: 1.5rem;
+  }
+  h1 {
+    line-height: 45px;
+  }
+  .btns-wrapper {
+    .add-task-btn {
+      cursor: pointer;
+      p {
+        font-size: 1rem;
+      }
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+    .sign-out-btn {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    h1 {
+      font-size: 1.5rem !important  ;
+    }
+  }
+  @media screen and (max-width: 440px) {
+    h1 {
+      font-size: 1.3rem !important  ;
+    }
+    .btns-wrapper {
+      gap: 0.6rem !important;
+      .sign-out-btn {
+        font-size: 0.7rem;
+        img {
+          width: 0.8rem !important;
+          height: 0.8rem !important;
+        }
+      }
+      .add-task-btn {
+        padding: 0.5rem !important;
+        p {
+          font-size: 0.7rem !important;
+        }
+        img {
+          width: 0.9rem !important;
+          height: 0.9rem !important;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 360px) {
+    h1 {
+      font-size: 0.9rem !important  ;
+    }
+  }
+}

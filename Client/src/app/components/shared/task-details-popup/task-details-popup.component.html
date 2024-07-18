@@ -1,0 +1,19 @@
+<div class="details-box position-absolute top-0 z-2 p-4 shadow d-flex flex-column rounded-3"  [class]="componentAction == componentActions.Active ? 'bg-white' : 'bg-primary' ">
+    <div class="details d-flex flex-column gap-2">
+      <div class="title">
+        <h4 class="fw-700 text-black">{{task.title}}</h4>
+        <p class="m-0 fw-400" [style.color]="componentAction == componentActions.Active ? '#B5B5B5' : '#BA5112'" > {{ getRelativeTime(task.createdOn) }}</p>
+      </div>
+      <div class="description">
+        <h5 class="fw-700">Description</h5>
+        <p class="m-0 text-black fw-400 text-start">{{task.description}}</p>
+      </div>
+    </div>
+    <div class="btns-wrapper mt-3 d-flex align-items-center justify-content-between">
+      <input class="m-0 d-grid " type="checkbox" [checked]="task.isCompleted" [disabled]="task.isCompleted" (change)="taskCompleted(task.id)">
+      <div class="btns d-flex  gap-2">
+        <img *ngIf="componentAction == componentActions.Active" src="./assets/edit-task.svg" alt="edit-icon" (click)="editTask(task.id)" />
+        <img [src]=" componentAction == componentActions.Active ? './assets/delete-task-active.svg' : './assets/delete-task-completed.svg'" alt="delete-icon" (click)="deleteTask(task.id)"/>
+      </div>
+    </div>
+ </div>
